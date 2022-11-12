@@ -17,7 +17,9 @@ import terser from 'gulp-terser';
 const styles = () => {
   return gulp.src('source/scss/style.scss')
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: ['node_modules']
+    }))
     .pipe(postcss([
       autoprefixer()
     ]))

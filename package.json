@@ -16,17 +16,24 @@
     "gulp-terser": "^2.1.0",
     "gulp-webp": "^4.0.1"
   },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  },
   "scripts": {
     "build": "gulp build",
     "start": "gulp",
     "webp": "gulp towebp"
   },
   "browserslist": [
-    "last 2 versions",
+    ">= 0.5%",
+    "last 2 major versions",
     "not dead",
-    "not ie <= 11",
-    "not op_mini all",
-    "not < 0.25%"
+    "Chrome >= 60",
+    "Firefox >= 60",
+    "Firefox ESR",
+    "iOS >= 12",
+    "Safari >= 12",
+    "not Explorer <= 11"
   ],
   "type": "module"
 }

@@ -8,6 +8,7 @@
   font-size: 40px;
   line-height: 49px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .projects__queue {
@@ -17,6 +18,12 @@
   line-height: 34px;
   text-transform: uppercase;
   color: #EEFB9F;
+}
+
+.projects__slide,
+.projects__no-data {
+  border: 1px #b0c8ff solid;
+  border-radius: 40px;
 }
 
 .projects__name {

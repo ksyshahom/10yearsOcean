@@ -1,0 +1,21 @@
+// изменение максимальной ширины контейнера xxl
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1920px
+);
+
+// изменения горизонтальных отступов контейнера (150px на ширине экрана 1920px)
+$container-padding-x: 15.6%;
+
+// подключение bootstrap
+@import "bootstrap/scss/bootstrap-grid";
+
+// при ширине экрана более 1920px отступ контейнера равен 150px
+@media (min-width: 1920px) {
+  .container-xxl {
+    @include make-container(300px);
+  }
+}

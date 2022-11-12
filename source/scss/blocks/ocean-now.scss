@@ -1,3 +1,11 @@
 .ocean-now__title {
   @include h2;
 }
+
+.ocean-now__pics-wrapper {
+  margin-top: -220px;
+}
+
+.ocean-now__pic img {
+  display: block;
+}

@@ -2,6 +2,10 @@
   @include h2;
 }
 
+.news__slide {
+  text-align: center;
+}
+
 .news__slide-title-link {
   @include link;
   font-family: 'Noto Sans', 'Arial', sans-serif;

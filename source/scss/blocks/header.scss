@@ -13,8 +13,13 @@
   background-size: cover;
 }
 
+.header__logo-wrapper {
+  text-align: start;
+}
+
 .header__nav {
   font-family: 'Noto Sans', 'Arial', sans-serif;
+  text-align: center;
 }
 
 .header__nav-list {

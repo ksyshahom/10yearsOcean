@@ -1,5 +1,6 @@
 .activity__title {
   @include h2;
+  text-align: start;
 }
 
 .activity__item {
