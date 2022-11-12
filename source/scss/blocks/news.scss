@@ -1,0 +1,28 @@
+.news__title {
+  @include h2;
+}
+
+.news__slide-title-link {
+  @include link;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 31px;
+  text-decoration: underline;
+}
+
+.news__nav-slide {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 43px;
+}
+
+.news__nav-btn {
+  width: 58px;
+  height: 56px;
+
+  border: 1px #ffffff solid;
+  border-radius: 50%;
+  background-color: transparent;
+}

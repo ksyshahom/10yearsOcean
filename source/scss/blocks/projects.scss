@@ -1,0 +1,43 @@
+.projects {
+  background-color: #2d4f9d;
+}
+
+.projects__title {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+
+.projects__queue {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #EEFB9F;
+}
+
+.projects__name {
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.projects__nav-slide {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 43px;
+}
+
+.projects__nav-btn {
+  width: 58px;
+  height: 56px;
+
+  border: 1px #ffffff solid;
+  border-radius: 50%;
+  background-color: transparent;
+}

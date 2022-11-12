@@ -1,0 +1,12 @@
+.activity__title {
+  @include h2;
+}
+
+.activity__item {
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+
+  opacity: 0.56;
+}

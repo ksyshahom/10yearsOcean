@@ -1,0 +1,52 @@
+.header {
+  background-image: url("../img/page-bg.jpg");
+  background-image: image-set(
+      url("../img/page-bg.jpg") 1x,
+      url("../img/page-bg@2x.jpg") 2x
+  );
+  background-image: -webkit-image-set(
+      url("../img/page-bg.jpg") 1x,
+      url("../img/page-bg@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.header__nav {
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+}
+
+.header__nav-list {
+  padding-left: 0;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+
+  list-style: none;
+}
+
+.header__login-btn {
+  display: block;
+
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-decoration: none;
+
+  background-color: #ec5550;
+
+  transition-property: background-color;
+  transition-duration: 500ms;
+
+  &:focus,
+  &:hover {
+    background-color: #F18C88;
+  }
+
+  &:active {
+    background-color: #AB3E3A;
+  }
+}
