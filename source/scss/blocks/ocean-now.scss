@@ -1,5 +1,29 @@
+.ocean-now {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 797px;
+    right: 0;
+
+    width: 1830px;
+    height: 2840px;
+
+    background-image: url("../img/ocean-now-line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.ocean-now__wrapper {
+  position: relative;
+  z-index: 2;
+}
+
 .ocean-now__title {
   @include h2;
+  margin-bottom: 80px;
 }
 
 .ocean-now__pics-wrapper {

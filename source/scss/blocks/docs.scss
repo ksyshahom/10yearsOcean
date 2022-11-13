@@ -1,8 +1,17 @@
 .docs__title {
   @include h2;
+  margin-bottom: 60px;
+}
+
+.docs__section {
+  flex-shrink: 0;
+  width: 390px;
 }
 
 .docs__section-title {
+  margin-top: 0;
+  margin-bottom: 32px;
+
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -12,6 +21,11 @@
 .docs__list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
+}
+
+.docs__item {
+  margin-bottom: 26px;
 }
 
 .docs__item-link {
@@ -20,4 +34,38 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+
+    ~ .docs__item-link-arrow:after {
+      right: -28px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.docs__item-link-arrow {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: -23px;
+
+    width: 16px;
+    height: 12px;
+
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition-property: right;
+    transition-duration: 500ms;
+  }
 }

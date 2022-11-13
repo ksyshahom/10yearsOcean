@@ -1,11 +1,82 @@
+.goals__pic {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -186px;
+    left: -90px;
+
+    width: 951px;
+    height: 953px;
+
+    background-image: url("../img/goals.png");
+    background-image: image-set(
+        url("../img/goals.png") 1x,
+        url("../img/goals@2x.png") 2x
+    );
+    background-image: -webkit-image-set(
+        url("../img/goals.png") 1x,
+        url("../img/goals@2x.png") 2x
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.goals__info-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
 .goals__title {
   @include h2;
+  margin-bottom: 84px;
+
   text-align: start;
 }
 
+.goals__list {
+  margin: 0;
+  padding-left: 140px;
+  padding-right: 32px;
+
+  list-style: none;
+  counter-reset: items;
+}
+
 .goals__item {
+  position: relative;
+
+  margin-bottom: 102px;
+
   font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 23px;
   line-height: 31px;
+
+  counter-increment: items;
+
+  &:before {
+    @include zero-ol;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -91px;
+    left: 50%;
+
+    width: 16px;
+    height: 25px;
+    margin-left: -72px;
+
+    background-image: url("../img/goals-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
 }

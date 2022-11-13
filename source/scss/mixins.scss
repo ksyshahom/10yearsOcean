@@ -1,4 +1,6 @@
 @mixin h2 {
+  margin-top: 0;
+
   font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -20,4 +22,20 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+@mixin zero-ol {
+  content: counter(items, decimal-leading-zero)".";
+  position: absolute;
+  top: 0;
+  left: -142px;
+
+  padding-right: 30px;
+  min-height: 100px;
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+
+  border-right: 1px #ffffff solid;
 }

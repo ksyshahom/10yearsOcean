@@ -93,6 +93,13 @@ export const copy = () => {
     .pipe(gulp.dest("build"));
 }
 
+const copyswiper = () => {
+  return gulp.src([
+    "node_modules/swiper/swiper-bundle.min.js"
+  ])
+    .pipe(gulp.dest("build/scripts"));
+}
+
 // Server
 
 const server = (done) => {
@@ -124,9 +131,9 @@ const watcher = () => {
 }
 
 export default gulp.series(
-  clean, copy, styles, html, js, server, watcher
+  clean, copy, copyswiper, styles, html, js, server, watcher
 );
 
 export const build = gulp.series(
-  clean, copy, styles, html, js
+  clean, copy, copyswiper, styles, html, js
 );

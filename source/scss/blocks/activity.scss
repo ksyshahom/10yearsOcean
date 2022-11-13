@@ -1,13 +1,51 @@
 .activity__title {
   @include h2;
+  margin-bottom: 65px;
+
   text-align: start;
 }
 
+.activity__list{
+  margin: 0;
+  padding-left: 140px;
+
+  list-style: none;
+  counter-reset: items;
+}
+
 .activity__item {
+  position: relative;
+
+  margin-bottom: 125px;
+
   font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 41px;
+  color: rgba(255,255,255,0.56);
 
-  opacity: 0.56;
+  counter-increment: items;
+
+  &:before {
+    @include zero-ol;
+    color: #ffffff;
+  }
+}
+
+.activity__pic {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: -121px;
+
+    width: 968px;
+    height: 867px;
+
+    background-image: url("../img/steps-hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

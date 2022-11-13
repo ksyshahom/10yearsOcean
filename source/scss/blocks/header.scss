@@ -1,4 +1,6 @@
 .header {
+  padding: 80px 0 100px;
+
   background-image: url("../img/page-bg.jpg");
   background-image: image-set(
       url("../img/page-bg.jpg") 1x,
@@ -23,7 +25,9 @@
 }
 
 .header__nav-list {
-  padding-left: 0;
+  padding: 0 80px;
+  margin-top: 9px;
+  margin-bottom: 0;
 
   font-weight: 500;
   font-size: 18px;
@@ -32,8 +36,29 @@
   list-style: none;
 }
 
+.header__nav-item {
+  max-width: 230px;
+  margin-bottom: 25px;
+}
+
+.header__nav-link {
+  @include link;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .header__login-btn {
   display: block;
+  width: 100px;
+  padding: 13px 0;
+  margin-top: 14px;
 
   color: #ffffff;
   font-weight: 700;
@@ -42,6 +67,7 @@
   text-decoration: none;
 
   background-color: #ec5550;
+  border-radius: 3px;
 
   transition-property: background-color;
   transition-duration: 500ms;
@@ -54,4 +80,8 @@
   &:active {
     background-color: #AB3E3A;
   }
+}
+
+.header__hero {
+  margin-bottom: 233px;
 }

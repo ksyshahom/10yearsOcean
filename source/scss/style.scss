@@ -1,5 +1,8 @@
 // подключение и перезаписывание bootstrap
-@import "custom";
+@import "custom-bootstrap";
+
+@import "swiper/swiper-vars";
+@import "swiper/swiper";
 
 // мои базовые файлы
 @import "normalize";
@@ -13,6 +16,7 @@
 @import "blocks/header";
 @import "blocks/hero";
 @import "blocks/news";
+@import "blocks/main";
 @import "blocks/docs";
 @import "blocks/ocean-now";
 @import "blocks/goals";
