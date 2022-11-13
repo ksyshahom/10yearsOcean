@@ -31,7 +31,7 @@
       margin-top: 0;
     }
 
-    & .news__slide-pic-link {
+    & .news__slide-pic-wrapper {
       margin-top: 30px;
     }
 
@@ -47,10 +47,6 @@
   &.swiper-slide-next {
     justify-content: end;
   }
-}
-
-.news__slide-pic-link {
-  display: block;
 }
 
 .news__slide-pic {

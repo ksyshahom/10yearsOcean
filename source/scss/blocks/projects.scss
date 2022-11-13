@@ -40,19 +40,11 @@
 
 .projects__slide,
 .projects__no-data {
-  height: 193px;
   padding: 25px 44px;
+  height: auto;
 
   border: 1px #b0c8ff solid;
   border-radius: 40px;
-}
-
-.projects__slide {
-  width: fit-content;
-
-  &:last-child {
-    margin-right: 15px;
-  }
 }
 
 .projects__no-data {
@@ -65,8 +57,6 @@
 }
 
 .projects__name {
-  max-width: 420px;
-
   font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 600;
   font-size: 20px;

@@ -10,7 +10,7 @@ const swiper = new Swiper(".projects__slider", {
   grabCursor: true,
   rewind:true,
   slideToClickedSlide: true,
-  slidesPerView: "auto",
+  slidesPerView: 2.15,
   spaceBetween: 45,
 });
 
