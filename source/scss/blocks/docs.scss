@@ -69,3 +69,9 @@
     transition-duration: 500ms;
   }
 }
+
+@include media-breakpoint-down(xxl) {
+  .docs__section {
+    width: 350px;
+  }
+}

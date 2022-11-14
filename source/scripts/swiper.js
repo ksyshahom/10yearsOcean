@@ -7,10 +7,15 @@ const swiper = new Swiper(".projects__slider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  slidesPerView: 1.5,
+  breakpoints: {
+    1920: {
+      slidesPerView: 2.15,
+    }
+  },
   grabCursor: true,
   rewind:true,
   slideToClickedSlide: true,
-  slidesPerView: 2.15,
   spaceBetween: 45,
 });
 

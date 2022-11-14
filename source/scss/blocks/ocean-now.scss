@@ -33,3 +33,18 @@
 .ocean-now__pic img {
   display: block;
 }
+
+@include media-breakpoint-down(xxl) {
+  .ocean-now:before {
+    right: -364px;
+  }
+
+  .ocean-now__pic--2 {
+    margin-left: -65px;
+  }
+
+  .ocean-now__pic--3 {
+    margin-top: -240px;
+    margin-right: -65px;
+  }
+}
