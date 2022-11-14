@@ -1,22 +1,3 @@
-.ocean-need {
-  position: relative;
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 308px;
-    left: 0;
-    right: 0;
-    z-index: 3;
-
-    height: 3279px;
-
-    background-image: url("../img/steps-line.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
 .ocean-need__title {
   margin-top: 0;
   margin-bottom: 152px;
@@ -30,13 +11,27 @@
 }
 
 .ocean-need__list {
-  margin: 0;
-  padding: 0;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 107px;
+    left: -137px;
+    right: -137px;
+    z-index: 2;
+
+    height: 3279px;
+
+    background-image: url("../img/steps-line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .ocean-need__item {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 
   font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 400;
@@ -44,22 +39,63 @@
   line-height: 27px;
 
   &--1 {
-    margin-bottom: 120px;
+    margin-bottom: 140px;
+    padding-right: 10%;
+  }
 
-    & .ocean-need__item-text {
-      padding-right: 10%;
-    }
+  &--2 {
+    margin-bottom: 133px;
+    padding-right: 1%;
+  }
 
-    & .ocean-need__item-pic {
-      &:after {
-        top: -127px;
-        right: -64px;
+  &--3 {
+    margin-bottom: 190px;
+    padding-right: 10%;
+  }
 
-        width: 790px;
-        height: 572px;
+  &--4 {
+    margin-bottom: 353px;
+    padding-right: 1%;
+  }
 
-        background-image: url("../img/steps1.png");
-      }
+  &--5 {
+    margin-bottom: 182px;
+    padding-right: 2%;
+  }
+
+  &--6 {
+    margin-bottom: 270px;
+    padding-right: 4%;
+  }
+
+  &--7 {
+    margin-bottom: 0;
+    padding-right: 5%;
+  }
+}
+
+.ocean-need__item-pic {
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--1 {
+    &:after {
+      top: -127px;
+      right: -64px;
+
+      width: 790px;
+      height: 572px;
+
+      background-image: url("../img/steps1.png");
     }
 
     & .ocean-need__item-number {
@@ -69,22 +105,14 @@
   }
 
   &--2 {
-    margin-bottom: 113px;
+    &:after {
+      top: -83px;
+      left: -138px;
 
-    & .ocean-need__item-text {
-      padding-right: 1%;
-    }
+      width: 626px;
+      height: 571px;
 
-    & .ocean-need__item-pic {
-      &:after {
-        top: -83px;
-        left: -138px;
-
-        width: 626px;
-        height: 571px;
-
-        background-image: url("../img/steps2.png");
-      }
+      background-image: url("../img/steps2.png");
     }
 
     & .ocean-need__item-number {
@@ -94,22 +122,14 @@
   }
 
   &--3 {
-    margin-bottom: 170px;
+    &:after {
+      top: -117px;
+      right: -7px;
 
-    & .ocean-need__item-text {
-      padding-right: 10%;
-    }
+      width: 750px;
+      height: 571px;
 
-    & .ocean-need__item-pic {
-      &:after {
-        top: -117px;
-        right: -7px;
-
-        width: 750px;
-        height: 571px;
-
-        background-image: url("../img/steps3.png");
-      }
+      background-image: url("../img/steps3.png");
     }
 
     & .ocean-need__item-number {
@@ -119,22 +139,14 @@
   }
 
   &--4 {
-    margin-bottom: 333px;
+    &:after {
+      top: -82px;
+      left: -136px;
 
-    & .ocean-need__item-text {
-      padding-right: 1%;
-    }
+      width: 684px;
+      height: 571px;
 
-    & .ocean-need__item-pic {
-      &:after {
-        top: -82px;
-        left: -136px;
-
-        width: 684px;
-        height: 571px;
-
-        background-image: url("../img/steps4.png");
-      }
+      background-image: url("../img/steps4.png");
     }
 
     & .ocean-need__item-number {
@@ -144,22 +156,14 @@
   }
 
   &--5 {
-    margin-bottom: 162px;
+    &:after {
+      top: -79px;
+      right: -69px;
 
-    & .ocean-need__item-text {
-      padding-right: 2%;
-    }
+      width: 750px;
+      height: 571px;
 
-    & .ocean-need__item-pic {
-      &:after {
-        top: -79px;
-        right: -69px;
-
-        width: 750px;
-        height: 571px;
-
-        background-image: url("../img/steps5.png");
-      }
+      background-image: url("../img/steps5.png");
     }
 
     & .ocean-need__item-number {
@@ -169,22 +173,14 @@
   }
 
   &--6 {
-    margin-bottom: 250px;
+    &:after {
+      top: -138px;
+      left: -137px;
 
-    & .ocean-need__item-text {
-      padding-right: 4%;
-    }
+      width: 684px;
+      height: 571px;
 
-    & .ocean-need__item-pic {
-      &:after {
-        top: -138px;
-        left: -137px;
-
-        width: 684px;
-        height: 571px;
-
-        background-image: url("../img/steps6.png");
-      }
+      background-image: url("../img/steps6.png");
     }
 
     & .ocean-need__item-number {
@@ -194,12 +190,6 @@
   }
 
   &--7 {
-    margin-bottom: 0;
-
-    & .ocean-need__item-text {
-      padding-right: 5%;
-    }
-
     & .ocean-need__item-number {
       top: -7px;
       left: 204px;
@@ -207,20 +197,9 @@
   }
 }
 
-.ocean-need__item-pic {
-  position: relative;
-
-  &:after {
-    content: "";
-    position: absolute;
-
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-
 .ocean-need__item-number {
   position: absolute;
+  z-index: 2;
 
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-style: italic;
