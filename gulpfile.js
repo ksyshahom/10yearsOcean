@@ -23,10 +23,10 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('build/css'))
+    .pipe(gulp.dest('docs/css'))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest('build/css'))
+    .pipe(gulp.dest('docs/css'))
     .pipe(browser.stream());
 }
 
@@ -35,7 +35,7 @@ const styles = () => {
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('docs'));
 }
 
 // JS
@@ -47,7 +47,7 @@ const js = () => {
         'comments': false,
       },
     }))
-    .pipe(gulp.dest('build/scripts'));
+    .pipe(gulp.dest('docs/scripts'));
 }
 
 // Images
@@ -78,7 +78,7 @@ export const towebp = () => {
 // Clean
 
 export const clean = () => {
-  return del('build');
+  return del('docs');
 };
 
 // Copy
@@ -90,14 +90,14 @@ export const copy = () => {
   ], {
     base: "source"
   })
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("docs"));
 }
 
 const copyswiper = () => {
   return gulp.src([
     "node_modules/swiper/swiper-bundle.min.js"
   ])
-    .pipe(gulp.dest("build/scripts"));
+    .pipe(gulp.dest("docs/scripts"));
 }
 
 // Server
@@ -105,7 +105,7 @@ const copyswiper = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'docs'
     },
     cors: true,
     notify: false,
