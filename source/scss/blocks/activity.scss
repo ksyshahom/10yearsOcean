@@ -47,5 +47,16 @@
     background-image: url("../img/steps-hero.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .activity__pic:after {
+    top: 85px;
+    right: -170px;
+
+    width: 700px;
+    height: 627px;
   }
 }

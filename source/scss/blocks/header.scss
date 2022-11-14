@@ -1,6 +1,10 @@
 .header {
-  padding: 80px 0 100px;
+  background-color: #0c1654;
+}
 
+.header__wrapper {
+  padding-top: 80px;
+  padding-bottom: 100px;
   background-image: url("../img/page-bg.jpg");
   background-image: image-set(
       url("../img/page-bg.jpg") 1x,
@@ -84,4 +88,29 @@
 
 .header__hero {
   margin-bottom: 233px;
+}
+
+@include media-breakpoint-down(xxl) {
+  .header {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+
+    background-image: url("../img/page-bg.jpg");
+    background-image: image-set(
+        url("../img/page-bg.jpg") 1x,
+        url("../img/page-bg@2x.jpg") 2x
+    );
+    background-image: -webkit-image-set(
+        url("../img/page-bg.jpg") 1x,
+        url("../img/page-bg@2x.jpg") 2x
+    );
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  .header__wrapper {
+    background: none;
+  }
 }

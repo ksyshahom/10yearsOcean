@@ -17,3 +17,17 @@
 .main__ocean-need {
   margin-bottom: 112px;
 }
+
+@include media-breakpoint-down(xxl) {
+  .main {
+    overflow: hidden;
+  }
+
+  .main__ocean-now {
+    margin-bottom: 250px;
+  }
+
+  .main__goals {
+    margin-bottom: 200px;
+  }
+}

@@ -18,14 +18,23 @@ $container-max-widths: (
 );
 
 // изменения горизонтальных отступов контейнера (150px на ширине экрана 1920px)
-$container-padding-x: 15.6%;
+$container-padding-x: 0px;
 
 // подключение bootstrap
 @import "bootstrap/scss/bootstrap-grid";
 
-// при ширине экрана более 1920px отступ контейнера равен 150px
-@media (min-width: 1920px) {
-  .container-xxl {
-    @include make-container(300px);
+@include media-breakpoint-up(xl) {
+  .container {
+    padding-right: 100px;
+    padding-left: 100px;
   }
 }
+
+@include media-breakpoint-up(xxl) {
+  .container {
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+}
+
+

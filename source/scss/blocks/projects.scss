@@ -101,3 +101,21 @@
     transform: rotate(180deg);
   }
 }
+
+@include media-breakpoint-down(xxl) {
+  .projects {
+    max-width: none;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .projects__wrapper {
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}

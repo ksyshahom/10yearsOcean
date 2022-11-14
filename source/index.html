@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page d-flex flex-column">
-  <header class="page__header header container">
-    <div class="container">
+  <header class="page__header header">
+    <div class="header__wrapper container">
       <nav class="header__nav row justify-content-between align-items-start">
         <div class="header__logo-wrapper col-1">
           <img class="header__logo" src="img/logo.svg" alt="10-летие ООН наук об океане" width="59" height="45">
@@ -40,7 +40,6 @@
           <a class="header__login-btn ms-auto" href="#">Войти</a>
         </div>
       </nav>
-    </div>
 
     <section class="header__hero hero">
       <h1 class="hero__title">
@@ -53,7 +52,6 @@
       </div>
     </section>
 
-    <div class="container">
       <section class="header__news news">
         <h2 class="news__title">Новости</h2>
         <div class="news__slider swiper">
@@ -198,12 +196,12 @@
             width="1194" height="671">
         </picture>
         <div class="ocean-now__pics-wrapper row justify-content-between">
-          <picture class="ocean-now__pic col-auto">
+          <picture class="ocean-now__pic ocean-now__pic--2 col-auto">
             <source type="image/webp" srcset="img/ocean-now2.webp 1x, img/ocean-now2@2x.webp 2x">
             <img src="img/ocean-now2.jpg" srcset="img/ocean-now2@2x.jpg 2x" alt="Океан, который мы имеем"
               width="652" height="440">
           </picture>
-          <picture class="ocean-now__pic col-auto">
+          <picture class="ocean-now__pic ocean-now__pic--3 ms-auto col-auto">
             <source type="image/webp" srcset="img/ocean-now3.webp 1x, img/ocean-now3@2x.webp 2x">
             <img src="img/ocean-now3.jpg" srcset="img/ocean-now3@2x.jpg 2x" alt="Океан, который мы имеем"
               width="639" height="440">
@@ -327,103 +325,105 @@
     </section>
 
     <section class="main__projects projects container">
-      <h2 class="projects__title mx-auto">Проекты и программы с участием России в рамках десятилетия</h2>
-      <h3 class="projects__queue">1 очередь</h3>
-      <div class="projects__slider swiper">
-        <div class="projects__slides swiper-wrapper align-items-stretch">
-          <div class="projects__slide d-flex align-items-center swiper-slide">
-            <img class="projects__logo flex-shrink-0" src="img/logo-min-obr.svg" alt="Плавучий университет" width="343" height="96">
-            <div class="projects__name">Плавучий университет</div>
-          </div>
-          <div class="projects__slide d-flex align-items-center swiper-slide">
-            <picture class="flex-shrink-0">
-              <source type="image/webp" srcset="img/logo-arctic-antarctic.webp">
-              <img class="projects__logo" src="img/logo-arctic-antarctic.png" width="143" height="143"
-                alt="Комплексные многодисциплинарные исследования и мониторинг экосистем Северного Ледовитого океана и его морей (ААНИИ)">
-            </picture>
-            <div class="projects__name">
-              Комплексные многодисциплинарные исследования и мониторинг экосистем Северного Ледовитого океана и его
-              морей (ААНИИ)
+      <div class="projects__wrapper">
+        <h2 class="projects__title mx-auto">Проекты и программы с участием России в рамках десятилетия</h2>
+        <h3 class="projects__queue">1 очередь</h3>
+        <div class="projects__slider swiper">
+          <div class="projects__slides swiper-wrapper align-items-stretch">
+            <div class="projects__slide d-flex align-items-center swiper-slide">
+              <img class="projects__logo flex-shrink-0" src="img/logo-min-obr.svg" alt="Плавучий университет" width="343" height="96">
+              <div class="projects__name">Плавучий университет</div>
+            </div>
+            <div class="projects__slide d-flex align-items-center swiper-slide">
+              <picture class="flex-shrink-0">
+                <source type="image/webp" srcset="img/logo-arctic-antarctic.webp">
+                <img class="projects__logo" src="img/logo-arctic-antarctic.png" width="143" height="143"
+                  alt="Комплексные многодисциплинарные исследования и мониторинг экосистем Северного Ледовитого океана и его морей (ААНИИ)">
+              </picture>
+              <div class="projects__name">
+                Комплексные многодисциплинарные исследования и мониторинг экосистем Северного Ледовитого океана и его
+                морей (ААНИИ)
+              </div>
+            </div>
+            <div class="projects__slide d-flex align-items-center swiper-slide">
+              <picture class="flex-shrink-0">
+                <source type="image/webp" srcset="img/logo-arctic-antarctic.webp">
+                <img class="projects__logo" src="img/logo-arctic-antarctic.png" width="143" height="143"
+                     alt="Комплексные многодисциплинарные исследования и мониторинг экосистем Северного Ледовитого океана и его морей (ААНИИ)">
+              </picture>
+              <div class="projects__name">
+                Комплексные многодисциплинарные исследования и мониторинг экосистем Северного Ледовитого океана и его
+                морей (ААНИИ)
+              </div>
+            </div>
+            <div class="projects__slide d-flex align-items-center swiper-slide">
+              <img class="projects__logo flex-shrink-0" src="img/logo-min-obr.svg" alt="Плавучий университет" width="343" height="96">
+              <div class="projects__name">Плавучий университет</div>
             </div>
           </div>
-          <div class="projects__slide d-flex align-items-center swiper-slide">
-            <picture class="flex-shrink-0">
-              <source type="image/webp" srcset="img/logo-arctic-antarctic.webp">
-              <img class="projects__logo" src="img/logo-arctic-antarctic.png" width="143" height="143"
-                   alt="Комплексные многодисциплинарные исследования и мониторинг экосистем Северного Ледовитого океана и его морей (ААНИИ)">
-            </picture>
-            <div class="projects__name">
-              Комплексные многодисциплинарные исследования и мониторинг экосистем Северного Ледовитого океана и его
-              морей (ААНИИ)
-            </div>
-          </div>
-          <div class="projects__slide d-flex align-items-center swiper-slide">
-            <img class="projects__logo flex-shrink-0" src="img/logo-min-obr.svg" alt="Плавучий университет" width="343" height="96">
-            <div class="projects__name">Плавучий университет</div>
+          <div class="projects__slider-nav d-flex justify-content-center swiper-slide">
+            <button class="projects__nav-btn projects__nav-btn--prev swiper-button-prev" type="button">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <span class="projects__nav-slide swiper-pagination"></span>
+            <button class="projects__nav-btn projects__nav-btn--next swiper-button-next" type="button">
+              <span class="visually-hidden">Вперед</span>
+            </button>
           </div>
         </div>
-        <div class="projects__slider-nav d-flex justify-content-center swiper-slide">
-          <button class="projects__nav-btn projects__nav-btn--prev swiper-button-prev" type="button">
-            <span class="visually-hidden">Назад</span>
-          </button>
-          <span class="projects__nav-slide swiper-pagination"></span>
-          <button class="projects__nav-btn projects__nav-btn--next swiper-button-next" type="button">
-            <span class="visually-hidden">Вперед</span>
-          </button>
-        </div>
-      </div>
-      <h3 class="projects__queue">2 очередь</h3>
-      <div class="projects__slider swiper">
-        <div class="projects__slides swiper-wrapper align-items-stretch">
-          <div class="projects__slide d-flex align-items-center swiper-slide">
-            <picture class="flex-shrink-0">
-              <source type="image/webp" srcset="img/logo-ocean-institute.webp">
-              <img class="projects__logo" src="img/logo-ocean-institute.png" width="210" height="128"
-                   alt="MetaZooGene: метабаркодирование разнообразия зоопланктона">
-            </picture>
-            <div class="projects__name">
-              MetaZooGene: метабаркодирование разнообразия зоопланктона
+        <h3 class="projects__queue">2 очередь</h3>
+        <div class="projects__slider swiper">
+          <div class="projects__slides swiper-wrapper align-items-stretch">
+            <div class="projects__slide d-flex align-items-center swiper-slide">
+              <picture class="flex-shrink-0">
+                <source type="image/webp" srcset="img/logo-ocean-institute.webp">
+                <img class="projects__logo" src="img/logo-ocean-institute.png" width="210" height="128"
+                     alt="MetaZooGene: метабаркодирование разнообразия зоопланктона">
+              </picture>
+              <div class="projects__name">
+                MetaZooGene: метабаркодирование разнообразия зоопланктона
+              </div>
+            </div>
+            <div class="projects__slide d-flex align-items-center swiper-slide">
+              <picture class="flex-shrink-0">
+                <source type="image/webp" srcset="img/logo-vsegei.webp">
+                <img class="projects__logo" src="img/logo-vsegei.png" width="143" height="143"
+                     alt="Арктическое глубинное наблюдение многосферного круговорота">
+              </picture>
+              <div class="projects__name">
+                Арктическое глубинное наблюдение многосферного круговорота
+              </div>
+            </div>
+            <div class="projects__slide d-flex align-items-center swiper-slide">
+              <picture class="flex-shrink-0">
+                <source type="image/webp" srcset="img/logo-pacific-ocean.webp">
+                <img class="projects__logo" src="img/logo-pacific-ocean.png" width="143" height="143"
+                     alt="ООН24. Исследование самого сильного океанского течения на западе Тихого океана: 2-е совместное исследование Куросио и прилегающих регионов - от науки до благополучия человека">
+              </picture>
+              <div class="projects__name">
+                ООН24. Исследование самого сильного океанского течения на западе Тихого океана: 2-е совместное
+                исследование Куросио и прилегающих регионов - от науки до благополучия человека
+              </div>
+            </div>
+            <div class="projects__slide d-flex align-items-center swiper-slide">
+              <img class="projects__logo flex-shrink-0" src="img/logo-min-obr.svg" alt="Плавучий университет" width="343" height="96">
+              <div class="projects__name">Плавучий университет</div>
             </div>
           </div>
-          <div class="projects__slide d-flex align-items-center swiper-slide">
-            <picture class="flex-shrink-0">
-              <source type="image/webp" srcset="img/logo-vsegei.webp">
-              <img class="projects__logo" src="img/logo-vsegei.png" width="143" height="143"
-                   alt="Арктическое глубинное наблюдение многосферного круговорота">
-            </picture>
-            <div class="projects__name">
-              Арктическое глубинное наблюдение многосферного круговорота
-            </div>
-          </div>
-          <div class="projects__slide d-flex align-items-center swiper-slide">
-            <picture class="flex-shrink-0">
-              <source type="image/webp" srcset="img/logo-pacific-ocean.webp">
-              <img class="projects__logo" src="img/logo-pacific-ocean.png" width="143" height="143"
-                   alt="ООН24. Исследование самого сильного океанского течения на западе Тихого океана: 2-е совместное исследование Куросио и прилегающих регионов - от науки до благополучия человека">
-            </picture>
-            <div class="projects__name">
-              ООН24. Исследование самого сильного океанского течения на западе Тихого океана: 2-е совместное
-              исследование Куросио и прилегающих регионов - от науки до благополучия человека
-            </div>
-          </div>
-          <div class="projects__slide d-flex align-items-center swiper-slide">
-            <img class="projects__logo flex-shrink-0" src="img/logo-min-obr.svg" alt="Плавучий университет" width="343" height="96">
-            <div class="projects__name">Плавучий университет</div>
+          <div class="projects__slider-nav d-flex justify-content-center">
+            <button class="projects__nav-btn projects__nav-btn--prev swiper-button-prev" type="button">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <span class="projects__nav-slide swiper-pagination"></span>
+            <button class="projects__nav-btn projects__nav-btn--next swiper-button-next" type="button">
+              <span class="visually-hidden">Вперед</span>
+            </button>
           </div>
         </div>
-        <div class="projects__slider-nav d-flex justify-content-center">
-          <button class="projects__nav-btn projects__nav-btn--prev swiper-button-prev" type="button">
-            <span class="visually-hidden">Назад</span>
-          </button>
-          <span class="projects__nav-slide swiper-pagination"></span>
-          <button class="projects__nav-btn projects__nav-btn--next swiper-button-next" type="button">
-            <span class="visually-hidden">Вперед</span>
-          </button>
+        <h3 class="projects__queue">3 очередь</h3>
+        <div class="projects__no-data d-flex justify-content-center align-items-center">
+          <div class="projects__name">Ожидается объявление результатов</div>
         </div>
-      </div>
-      <h3 class="projects__queue">3 очередь</h3>
-      <div class="projects__no-data d-flex justify-content-center align-items-center">
-        <div class="projects__name">Ожидается объявление результатов</div>
       </div>
     </section>
   </main>
